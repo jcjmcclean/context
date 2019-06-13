@@ -24,6 +24,7 @@ function contextLink(scope, element) {
 	// Add listener to click events on body
 	if(!documentClickLoaded) {
 		$(document.body).on('mousedown', documentClick);
+		console.log('registered');
 		documentClickLoaded = true;
 	}
 
